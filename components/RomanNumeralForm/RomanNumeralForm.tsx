@@ -1,3 +1,4 @@
+import RomanNumeralCalculator from "@/lib/classes/RomanNumeralCalculator"
 import React, { useState } from "react"
 
 export default function RomanNumeralForm() {
@@ -31,7 +32,7 @@ export default function RomanNumeralForm() {
             <p>
                 <>Result: {
                     userNumber ?
-                        <>{userNumber}</> :
+                        new RomanNumeralCalculator(userNumber).convert() :
                         <small><i>Type a number above</i></small>
                 }
                 </>
