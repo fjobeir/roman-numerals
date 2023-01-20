@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Roman Numerals Converter</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <RomanNumeralForm />
